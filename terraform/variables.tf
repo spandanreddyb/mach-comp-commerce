@@ -21,3 +21,8 @@ variable "ct_stores" {
   }))
   default = {}
 }
+
+variable "variables" {
+  type        = any
+  description = "Generic way to pass variables to components."
+}
