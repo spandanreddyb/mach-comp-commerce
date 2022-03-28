@@ -1,5 +1,7 @@
-resource "commercetools_custom_object" "title_custom_object" {
+resource "commercetools_custom_object" "homepagetitle" {
     container = "pumademo-custom-container"
     key = "pumademo-custom-webapp"
-    value = var.variables.HOME_PAGE_TITLE
+    value = jsonencode({
+      var.variables.HOME_PAGE_TITLE
+    })
 }
